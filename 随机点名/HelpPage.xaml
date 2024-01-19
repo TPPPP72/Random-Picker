@@ -21,11 +21,18 @@
             <TextBlock Name="Version" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4" HorizontalAlignment="Right"/>
             <TextBlock Text="开发者:TPPPP" Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Right"/>
         </StackPanel>
-        <Button Name="LOG" Margin="8,0,0,0" Click="LOG_Click" HorizontalAlignment="Right" VerticalAlignment="Top">
-            <StackPanel Orientation="Horizontal">
-                <SymbolIcon Symbol= "Document" Margin="0,0,4,0"/>
-                <TextBlock Text="更新日志"/>
-            </StackPanel>
-        </Button>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <HyperlinkButton NavigateUri="https://github.com/TPPPP72/Random-Picker" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="GitHub"/>
+                </StackPanel>
+            </HyperlinkButton>
+            <Button Name="LOG" Margin="8,0,0,0" Click="LOG_Click" >
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Symbol= "Document" Margin="0,0,4,0"/>
+                    <TextBlock Text="更新日志"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
     </Grid>
 </Page>

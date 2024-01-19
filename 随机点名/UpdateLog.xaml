@@ -14,6 +14,9 @@
         </Grid>
         <ScrollView>
             <StackPanel Margin="0,30,0,0">
+                <TextBlock Text="2.5版本" FontSize="18" Margin="0,0,0,4"/>
+                <TextBlock Text="1.添加项目超链接" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="2.对部分代码修正" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,8"/>
                 <TextBlock Text="2.4版本" FontSize="18" Margin="0,0,0,4"/>
                 <TextBlock Text="1.增加次数重置键" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
                 <TextBlock Text="2.修复成员列表错位问题" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,8"/>

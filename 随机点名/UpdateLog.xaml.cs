@@ -17,7 +17,5 @@ namespace 随机点名
             SetTitleBar(AppTitleBar);
             Title = "更新日志";
         }
-
-
     }
 }

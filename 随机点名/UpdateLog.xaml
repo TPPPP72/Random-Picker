@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" ?>
+<Window
+    x:Class="随机点名.UpdateLog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:随机点名"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Title="更新日志">
+
+    <Grid Name="grid">
+        <Grid x:Name="AppTitleBar">
+            <TextBlock Height="20" Text="更新日志" Margin="4,4,0,4" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        </Grid>
+        <ScrollView>
+            <StackPanel Margin="0,30,0,0">
+                <TextBlock Text="2.4版本" FontSize="18" Margin="0,0,0,4"/>
+                <TextBlock Text="1.增加次数重置键" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="2.修复成员列表错位问题" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,8"/>
+                <TextBlock Text="2.3版本" FontSize="18" Margin="0,0,0,4"/>
+                <TextBlock Text="1.将原先的概率排布改为每次点击按钮后刷新" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="2.添加引擎选择功能" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,8"/>
+                <TextBlock Text="2.2版本" FontSize="18" Margin="0,0,0,4"/>
+                <TextBlock Text="1.随机数引擎更新，概率更为平均" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="2.引入统计功能" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,8"/>
+                <TextBlock Text="2.1版本" FontSize="18" Margin="0,0,0,4"/>
+                <TextBlock Text="1.正式添加点名动画" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="2.规范数据库的数据格式" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="3.设置窗口的默认材质为云母" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,8"/>
+                <TextBlock Text="2.0版本" FontSize="18" Margin="0,0,0,4"/>
+                <TextBlock Text="1.预添加点名动画" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="2.添加设置页面" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="3.添加窗口材质设置" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="4.预添加动画开启设置" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="5.重绘图标" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="6.重构标题栏，使得标题栏与程序主窗体一体化" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,8"/>
+                <TextBlock Text="1.2版本" FontSize="18" Margin="0,0,0,4"/>
+                <TextBlock Text="1.修复头像数据库会因错误的操作而崩溃的问题" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="2.增加最小窗口大小限制" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,8"/>
+                <TextBlock Text="1.1版本" FontSize="18" Margin="0,0,0,4"/>
+                <TextBlock Text="1.修复部分情况下，成员名单末尾无法显示的问题" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="2.重构成员列表视图" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="3.修复了编辑成员时，右击未选中仍可以进行操作的问题" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,8"/>
+                <TextBlock Text="1.0版本" FontSize="18" Margin="0,0,0,4"/>
+                <TextBlock Text="1.修复成员名单无法滑动的问题" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="2.修复头像畸形问题，同时优化主页的界面布局" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="3.修复窗口图标不显示的问题" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="4.将默认导航页设置为首页" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="5.增加批量导入成员名单功能" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="6.增加删除成员功能" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="7.增加设置成员头像功能" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="8.优化随机数生成算法" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+            </StackPanel>
+        </ScrollView>
+    </Grid>
+</Window>

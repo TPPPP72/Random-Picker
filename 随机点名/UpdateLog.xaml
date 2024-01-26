@@ -8,12 +8,23 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Title="更新日志">
 
-    <Grid Name="grid">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Grid x:Name="AppTitleBar">
-            <TextBlock Height="20" Text="更新日志" Margin="4,4,0,4" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Ellipse Height="20" Width="20" Margin="14,6,6,6" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="ms-appx:///Assets/Icon.png" />
+                    </Ellipse.Fill>
+                </Ellipse>
+                <TextBlock Height="20" Text="更新日志"/>
+            </StackPanel>
         </Grid>
-        <ScrollView>
-            <StackPanel Margin="0,30,0,0">
+        <ScrollViewer VerticalScrollBarVisibility="Visible" Grid.Row="1">
+            <StackPanel Margin="14,0,0,0">
                 <TextBlock Text="2.5版本" FontSize="18" Margin="0,0,0,4"/>
                 <TextBlock Text="1.添加项目超链接" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
                 <TextBlock Text="2.对部分代码修正" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,8"/>
@@ -54,6 +65,6 @@
                 <TextBlock Text="7.增加设置成员头像功能" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
                 <TextBlock Text="8.优化随机数生成算法" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
             </StackPanel>
-        </ScrollView>
+        </ScrollViewer>
     </Grid>
 </Window>

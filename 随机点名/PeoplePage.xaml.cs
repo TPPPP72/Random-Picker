@@ -165,7 +165,7 @@ namespace 随机点名
             }
             else if (result == ContentDialogResult.Secondary)
             {
-                DataAccess.UpdateHeadshot(GetCurrentID(), "ms-appx:///Assets/Headshot.png");
+                DataAccess.UpdateHeadshot(GetCurrentID(), Info.DefaultHeadshot);
                 Flash_Table();
             }
         }

@@ -38,7 +38,7 @@ namespace 随机点名
                 CommandText = "INSERT INTO MemberTable VALUES (NULL, @Entry1, @Entry2, 0);"
             };
             insertCommand.Parameters.AddWithValue("@Entry1", user.NAME);
-            insertCommand.Parameters.AddWithValue("@Entry2", user.HEADSHOT.Length > 0 ? user.HEADSHOT : "ms-appx:///Assets/Headshot.png");
+            insertCommand.Parameters.AddWithValue("@Entry2", user.HEADSHOT.Length > 0 ? user.HEADSHOT : Info.DefaultHeadshot);
             insertCommand.ExecuteReader();
         }
         public static void AddData(string input)
@@ -51,7 +51,7 @@ namespace 随机点名
                 CommandText = "INSERT INTO MemberTable VALUES (NULL, @Entry1, @Entry2, 0);"
             };
             insertCommand.Parameters.AddWithValue("@Entry1", input);
-            insertCommand.Parameters.AddWithValue("@Entry2", "ms-appx:///Assets/Headshot.png");
+            insertCommand.Parameters.AddWithValue("@Entry2", Info.DefaultHeadshot);
             insertCommand.ExecuteReader();
         }
         public static List<Userdata> GetData()

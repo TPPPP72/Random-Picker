@@ -39,7 +39,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" Padding="0,8,0,8">
-                        <Ellipse Fill="{Binding HEADSHOT}" Margin="0,0,8,0" Width="34" Height="34" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                        <Ellipse Fill="{Binding HEADSHOT}" Margin="0,0,8,0" Width="34" Height="34" HorizontalAlignment="Left" VerticalAlignment="Center" Tapped="Ellipse_Tapped" />
                         <TextBlock Text="{Binding NAME}" Margin="0,0,8,0" FontSize="15" VerticalAlignment="Center"/>
                         <TextBlock Text="{Binding TIME}" FontSize="15" VerticalAlignment="Center"/>
                     </StackPanel>

@@ -1,6 +1,8 @@
-﻿using Microsoft.UI.Xaml.Controls;
+﻿using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
 using System.Linq;
 using WinUIEx;
+using System.IO;
 
 
 // To learn more about WinUI, the WinUI project structure,
@@ -19,6 +21,7 @@ namespace 随机点名
             ExtendsContentIntoTitleBar = true;
             SetTitleBar(AppTitleBar);
             Title = Windows.ApplicationModel.Package.Current.DisplayName;
+            this.SetTaskBarIcon(Icon.FromFile(Path.Combine(Windows.ApplicationModel.Package.Current.InstalledPath, "Assets\\Icon.ico")));
             NavigationViewControl.SelectedItem = NavigationViewControl.MenuItems.OfType<NavigationViewItem>().First();
             Window_Navigation.Navigate(typeof(HomePage));
             this.CenterOnScreen();

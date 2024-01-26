@@ -79,6 +79,7 @@
     <Content Include="Assets\4star-single.mp4" />
     <Content Include="Assets\5star-single.mp4" />
     <Content Include="Assets\Headshot.png" />
+    <Content Include="Assets\Icon.ico" />
     <Content Include="Assets\Icon.png" />
     <Content Include="Images\BadgeLogo.scale-100.png" />
     <Content Include="Images\BadgeLogo.scale-125.png" />

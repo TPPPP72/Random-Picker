@@ -17,7 +17,7 @@
         <Grid x:Name="AppTitleBar">
             <Ellipse Height="20" Width="20" Margin="14,6,0,6" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Ellipse.Fill>
-                    <ImageBrush ImageSource="ms-appx:///Assets/Icon.png" />
+                    <ImageBrush ImageSource="ms-appx:///Assets/Icon.png"/>
                 </Ellipse.Fill>
             </Ellipse>
         </Grid>

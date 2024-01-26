@@ -1,6 +1,8 @@
-﻿using Microsoft.UI.Xaml;
+﻿using Microsoft.UI.Composition.SystemBackdrops;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Shapes;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -221,6 +223,20 @@ namespace 随机点名
                     await Edialog.ShowAsync();
                 }
             }
+        }
+
+        private void Ellipse_Tapped(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            Ellipse ellipse = sender as Ellipse;
+            ImageBrush brush = ellipse.Fill as ImageBrush;
+            HeadShotPreview headShotPreview = new(brush.ImageSource);
+            headShotPreview.Activate();
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            string material = localSettings.Values["Material"].ToString();
+            if (material == "云母")
+                headShotPreview.SystemBackdrop = new MicaBackdrop() { Kind = MicaKind.BaseAlt };
+            else
+                headShotPreview.SystemBackdrop = new DesktopAcrylicBackdrop();
         }
     }
 }

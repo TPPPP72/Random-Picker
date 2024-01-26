@@ -25,6 +25,10 @@
         </Grid>
         <ScrollViewer VerticalScrollBarVisibility="Visible" Grid.Row="1">
             <StackPanel Margin="14,0,0,0">
+                <TextBlock Text="2.6版本" FontSize="18" Margin="0,0,0,4"/>
+                <TextBlock Text="1.添加头像预览功能" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="2.修复更新日志无法滑动的问题" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
+                <TextBlock Text="3.优化子窗口布局" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,8"/>
                 <TextBlock Text="2.5版本" FontSize="18" Margin="0,0,0,4"/>
                 <TextBlock Text="1.添加项目超链接" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,4"/>
                 <TextBlock Text="2.对部分代码修正" Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,8"/>
